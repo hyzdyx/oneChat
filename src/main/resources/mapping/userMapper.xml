@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于绑定Dao接口 -->
+<mapper namespace="com.huangyz.onechat.dao.UserDao">
+    <!-- 用用查询映射结果 -->
+
+
+    <insert id="register" parameterType="com.huangyz.onechat.entity.User">
+        insert into user value(#{id},#{userName},#{password},#{date},#{sex})
+    </insert>
+
+</mapper>
+
