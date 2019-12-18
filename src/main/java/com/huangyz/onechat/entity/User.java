@@ -12,8 +12,11 @@ package com.huangyz.onechat.entity;
 public class User {
     private String userName;
     //1代表男，2代表女
+
     private int sex;
+
     private String password;
+
     private String birthday;
 
 
