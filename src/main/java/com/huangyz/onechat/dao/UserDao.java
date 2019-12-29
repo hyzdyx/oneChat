@@ -17,6 +17,6 @@ import java.util.List;
 public interface UserDao {
     int register(int id, String userName, String password, String date, int sex);
 
-    @Select("select count(*) from User")
+    @Select("girom User")
     int countUser();
 }
