@@ -1,8 +1,11 @@
-package com.hyz.dao;
+package com.huangyz.onechat.dao;
 
 
+import com.huangyz.onechat.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * @Author: huangyz
@@ -11,10 +14,6 @@ import org.apache.ibatis.annotations.Select;
  */
 
 
-@Mapper
 public interface UserDao {
-    int register(int id, String userName, String password, String date, int sex);
-
-    @Select("girom User")
-    int countUser();
+    List<User> findPerson();
 }

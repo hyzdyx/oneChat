@@ -4,10 +4,9 @@
 <mapper namespace="com.huangyz.onechat.dao.UserDao">
     <!-- 用用查询映射结果 -->
 
-
-    <insert id="register" parameterType="com.huangyz.onechat.entity.User">
-        insert into user value(#{id},#{userName},#{password},#{date},#{sex})
-    </insert>
+    <select id="findPerson" resultType="com.huangyz.onechat.entity.User">
+        select * from USER
+    </select>
 
 </mapper>
 

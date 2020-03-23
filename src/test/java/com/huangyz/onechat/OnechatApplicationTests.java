@@ -1,4 +1,4 @@
-package com;
+package com.huangyz.onechat;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

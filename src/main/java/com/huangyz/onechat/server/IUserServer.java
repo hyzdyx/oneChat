@@ -1,4 +1,9 @@
-package com.hyz.server;
+package com.huangyz.onechat.server;
+
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * @Author: huangyz
@@ -7,6 +12,5 @@ package com.hyz.server;
  */
 
 public interface IUserServer {
-    int register(String userName, String password, String date, int sex);
-    int count();
+
 }

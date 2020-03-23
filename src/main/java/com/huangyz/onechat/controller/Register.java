@@ -1,7 +1,7 @@
-package com.hyz.controller;
+package com.huangyz.onechat.controller;
 
-import com.hyz.entity.ResponseEntity;
-import com.hyz.server.IUserServer;
+import com.huangyz.onechat.entity.ResponseEntity;
+import com.huangyz.onechat.server.IUserServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +22,6 @@ public class Register {
                                    @RequestParam(value = "birthday") String date,
                                    @RequestParam(value = "sex") int sex) {
 
-        iUserServer.register(userName, password, date, sex);
         return ResponseEntity.SUCCESS;
     }
 }

@@ -1,4 +1,4 @@
-package com.hyz.entity;
+package com.huangyz.onechat.entity;
 
 import java.io.Serializable;
 

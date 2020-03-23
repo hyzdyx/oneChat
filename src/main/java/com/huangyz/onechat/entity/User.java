@@ -1,6 +1,7 @@
-package com.hyz.entity;
+package com.huangyz.onechat.entity;
 
 
+import java.io.Serializable;
 
 /**
  * @Author: huangyz
@@ -9,49 +10,28 @@ package com.hyz.entity;
  */
 
 
-public class User {
-    private String userName;
-    //1代表男，2代表女
+public class User implements Serializable {
+    int id;
+    String name;
 
-    private int sex;
-
-    private String password;
-
-    private String birthday;
-
-
-    public String getUserName() {
-        return userName;
+    public int getId() {
+        return id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getSex() {
-        return sex;
+    public String getName() {
+        return name;
     }
 
-    public void setSex(int sex) {
-        this.sex = sex;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-
-
 }
