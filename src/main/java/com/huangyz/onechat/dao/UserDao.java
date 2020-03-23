@@ -1,10 +1,8 @@
-package com.huangyz.onechat.dao;
+package com.hyz.dao;
 
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
 
 /**
  * @Author: huangyz

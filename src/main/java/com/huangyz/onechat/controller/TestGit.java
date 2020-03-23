@@ -1,4 +1,4 @@
-package com.huangyz.onechat.controller;
+package com.hyz.controller;
 
 public class
 TestGit {
